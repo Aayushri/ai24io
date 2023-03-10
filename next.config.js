@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   webpack5: true,
+  trailingSlash: True,
   webpack: (config) => {
     config.resolve.fallback = { fs: false, path: false };
 
