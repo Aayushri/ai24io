@@ -88,9 +88,9 @@ export default function Home() {
   <SwiperSlide>
   <a href="https://crew3.xyz/c/ai24coin" target="_blank"><img className={styles.airdropimg} src="/OFFICIAL-LAUNCHED-2.png" alt="image 2" /></a>
   </SwiperSlide>
-  {/* <SwiperSlide>
-    <img className={styles.airdropimg} src="/AI24-OFFICIAL-LAUNCHED.png" alt="image 3" />
-  </SwiperSlide> */}
+  <SwiperSlide>
+  <a href="https://t.me/ai24coin" target="_blank"><img className={styles.airdropimg} src="/OFFICIAL-LAUNCHED.png" alt="image 3" /></a>
+  </SwiperSlide>
 </Swiper>
 
         </div>
