@@ -24,6 +24,7 @@ function Navbar() {
 
     return (
         <>
+         
             <nav className={styles.navWrapper}>
                 <div className={styles.navbar}>
                     <div className={styles.logoSection} style={{"flex":"0.5"}}>
@@ -50,6 +51,7 @@ function Navbar() {
                     </div>
                 </div>
             </nav>
+            
         </>
     )
 }

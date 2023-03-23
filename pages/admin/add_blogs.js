@@ -2,7 +2,7 @@ import React, {  useEffect, useState } from "react";
 import Layout from "../../components/Layout";
 import swal from "sweetalert2";
 import dynamic from 'next/dynamic';
-import 'react-quill/dist/quill.snow.css';
+
 const dotenv = require("dotenv");
 
 
@@ -129,7 +129,7 @@ useEffect(() => {
     
     return(
         <>
-        
+        <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet"></link>
             <Layout>
                 <div className="main-panel">
                     <div className="content-wrapper">

@@ -20,16 +20,7 @@ export default function Login({ setToken }) {
 
   const [email, setUserName] = useState();
   const [password, setPassword] = useState();
-  const [passwordType, setPasswordType] = useState("password");
-
-  const togglePassword =()=>{
-    if(passwordType==="password")
-    {
-     setPasswordType("text")
-     return;
-    }
-    setPasswordType("password")
-  }
+  
 
   const handleSubmit = async e => {
     e.preventDefault();
@@ -84,7 +75,7 @@ export default function Login({ setToken }) {
                     />
                  
                     <input
-                     type={passwordType}
+                     type="text"
                     placeholder="Password"
                     className="form-field flex items-center justify-start pl-2  py-5 bg-gray-200 bg-opacity-20 rounded-2xl" 
                     onChange={e => setPassword(e.target.value)}

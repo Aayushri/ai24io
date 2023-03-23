@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { DataGrid, GridToolbarContainer, GridToolbarExport } from '@mui/x-data-grid'
 import Layout from '../../components/Layout';
 import Auth from '../../components/AdminAuth';
-import 'react-quill/dist/quill.snow.css';
+
 import Swal from 'sweetalert2';
 import Link from 'next/link';
 
@@ -210,6 +210,7 @@ export default  function  Users(setdata){
         <>
          <Auth>
             </Auth>
+            <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet"></link>
             <Layout>
                     <div className="main-panel">
                     <div className="content-wrapper">

@@ -1,7 +1,5 @@
 import Auth from '../UserAuth';
 import Cookies from 'js-cookie';
-import { useWeb3React } from "@web3-react/core";
-import { Injected } from "../../Helpers/Injected";
 import StructuredData from './StructuredData';
 import { useRouter } from 'next/router';
 
@@ -24,22 +22,6 @@ const Header = () => {
     : ( console.log('continue'));
   }
 
-
-  const { active, account, activate, deactivate } = useWeb3React();
-
-        const connect = async () => {
-         
-        try {
-          if(!account){
-           
-            await activate(Injected);
-          } else {
-            deactivate()
-          }
-        } catch (error) {
-          console.log('error', error)
-        }
-        }
 
         const router = useRouter();
 
@@ -135,12 +117,12 @@ return (
               
             </ul>
             <button className="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" style={{"cursor":"pointer"}} onClick={()=>Logout()}>Logout</button>
-            <div className="flex items-center justify-center w-36 px-6 py-4 bg-white bg-opacity-10 rounded-full">
-            <button className='text-base font-bold leading-tight text-pink-500' style={{"cursor":"pointer"}} onClick={connect}>
+            <div className="flex items-center justify-center w-36 px-6 py-4 bg-white bg-opacity-10 rounded-full"></div>
+            {/* <button className='text-base font-bold leading-tight text-pink-500' style={{"cursor":"pointer"}} onClick={connect}>
           {
             active ? `${account.substring(0, 4)}...${account.substring(38)}` :"Connect"
           }
-        </button></div>
+        </button> */}
           </nav>
          
           <div className="navbar-menu relative z-50 hidden">

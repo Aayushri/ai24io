@@ -61,7 +61,7 @@ async function update(data) {
 export default Edit;
 
 function Edit( catego ) {
-  const [isBusy, setBusy] = useState(true)
+  //const [isBusy, setBusy] = useState(true)
   const router = useRouter();
     const  id  = router.query.id;
    // catego = catego.categories;
@@ -77,7 +77,7 @@ function Edit( catego ) {
       }).then(response => response.json() )
   
       setTitle(blogs.data[0].cat_title);
-      setBusy(false);
+      
     };
   
     getUsers();

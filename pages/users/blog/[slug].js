@@ -1,7 +1,7 @@
 import {useRouter} from "next/router";
 import React, { useEffect, useState } from 'react'
 import Front from '../../../components/Front';
-import "react-quill/dist/quill.snow.css";
+
 import dynamic from "next/dynamic";
 const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 
@@ -100,7 +100,7 @@ export default function BlogDetail({blogers}) {
 
   return (
     <>
-     
+     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet"></link>
     <Front pageMeta={{
           title : isBusy? "" : blog.meta_tags,
           description:isBusy? "" : blog.meta_description
